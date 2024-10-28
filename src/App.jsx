@@ -1,20 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '../src/assets/logosvg.jpeg'
-import './App.css'
-
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Header from "./Component/Header/Header";
+import Footer from "./Component/Footer/Footer";
+import About from "./Pages/About/About";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://kwiqserve.netlify.app/" target="_blank">
-          <img src={viteLogo} className="logo" alt="KwiQServe" />
-        </a>
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
