@@ -10,7 +10,7 @@ function App() {
     <>
       <div>
         <a href="https://kwiqserve.netlify.app/" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={viteLogo} className="logo" alt="KwiQServe" />
         </a>
       </div>
     </>
