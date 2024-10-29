@@ -4,7 +4,7 @@ const Home = () => {
   return (
 <div className="bg-background min-h-screen">
       {/* Hero Section */}
-      <section className="flex items-center justify-center h-screen bg-gray-100 text-black">
+      <section id="home" className="flex items-center justify-center h-screen bg-gray-100 text-black">
         <div className="text-center">
           <h1 className="text-5xl font-bold mb-4 animate-pulse">Welcome to My Website</h1>
           <p className="text-xl mb-6">Your one-stop solution for all your needs.</p>
@@ -34,7 +34,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-gray-100">
+      <section id="about" className="py-20 bg-gray-100">
         <h2 className="text-3xl font-bold text-center mb-10">About Us</h2>
         <div className="container mx-auto px-4">
           <p className="text-lg text-center">
@@ -44,7 +44,7 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-100">
+      <section id="contact" className="py-20 bg-gray-100">
         <h2 className="text-3xl font-bold text-center mb-10">Contact Us</h2>
         <div className="container mx-auto px-4">
           <form className="max-w-md mx-auto bg-gray-200 p-6 rounded-lg shadow-lg">

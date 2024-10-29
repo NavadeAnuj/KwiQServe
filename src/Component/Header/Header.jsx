@@ -7,9 +7,13 @@ const Header = () => {
     setNavOpen(!navOpen);
   };
 
+  const closeNav = () => {
+    setNavOpen(false);
+  };
+
   return (
     <div>
-      <header className="flex justify-between items-center p-4 bg-primary text-white shadow-md relative transition duration-300">
+      <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-primary text-white shadow-md transition duration-300 z-50">
         <h1 className="text-xl font-bold">My Website</h1>
 
         {/* Toggle button for mobile */}
@@ -46,24 +50,27 @@ const Header = () => {
           <ul className="flex flex-col p-4 md:p-0 space-y-4 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6">
             <li>
               <a
-                href="/"
+                href="#home"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                onClick={closeNav}
               >
                 Home
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                onClick={closeNav}
               >
                 About
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                onClick={closeNav}
               >
                 Contact
               </a>
@@ -79,6 +86,9 @@ const Header = () => {
           ></div>
         )}
       </header>
+
+      {/* Adding some padding to prevent content from hiding behind the fixed header */}
+      <div className="pt-16"></div>
     </div>
   );
 };
