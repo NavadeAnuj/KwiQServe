@@ -37,7 +37,7 @@ const Home = () => {
             <h3 className="text-xl font-semibold mb-2">Service 2</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
-          <div className="bg-accent text-white p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-xl">
+          <div className="bg-grey text-white p-6 rounded-lg shadow-lg transition duration-300 hover:shadow-xl">
             <h3 className="text-xl font-semibold mb-2">Service 3</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
