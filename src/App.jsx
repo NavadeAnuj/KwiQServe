@@ -5,7 +5,6 @@ import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 import About from "./Pages/About/About";
 import './App.css';
-import Main from "./Pages/Main/Main";
 function App() {
   return (
     <>
