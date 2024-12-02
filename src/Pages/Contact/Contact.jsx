@@ -21,14 +21,20 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_abc123", // Replace with your service ID
-        "template_xyz456", // Replace with your template ID
+        "service_ih47uyt", // Replace with your service ID
+        "template_bqia0fo", // Replace with your template ID
         e.target,
-        "user_789xyz" // Replace with your user ID
+        "NsT-Gya3CWozuqHr1" // Replace with your user ID
       )
       .then(
         (result) => {
           setStatusMessage("Message sent successfully!");
+          // Reset the form fields
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
           setStatusMessage("Failed to send message. Please try again.");
@@ -57,7 +63,7 @@ const Contact = () => {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
               id="name"
               type="text"
-              name="user_name"
+              name="name"
               value={formData.name}
               onChange={handleChange}
               placeholder="Your Name"
@@ -74,7 +80,7 @@ const Contact = () => {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
               id="email"
               type="email"
-              name="user_email"
+              name="email"
               value={formData.email}
               onChange={handleChange}
               placeholder="Your Email"
@@ -90,7 +96,7 @@ const Contact = () => {
             <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700"
               id="message"
-              name="user_message"
+              name="message"
               value={formData.message}
               onChange={handleChange}
               placeholder="Your Message"

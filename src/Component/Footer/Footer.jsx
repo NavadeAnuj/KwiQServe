@@ -29,8 +29,8 @@ const Footer = () => {
           {/* Column 2: Contact Info */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Info</h3>
-            <p className="mb-2">Email: support@kwiqserve.com</p>
-            <p>Phone: +91 6355409176</p>
+            <p className="mb-2">Email: kwiqserve@gmail.com</p>
+            <p>Phone: +91 9558293383</p>
           </div>
 
           {/* Column 3: Social Media */}
