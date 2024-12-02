@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-
+import Service from "../../Pages/Service/Service";
+import About from "../../Pages/About/About";
+import Contact from "../../Pages/Contact/Contact";
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
@@ -59,7 +61,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href={<About/>}
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
@@ -68,7 +70,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/contact"
+                href={<Contact/>}
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
