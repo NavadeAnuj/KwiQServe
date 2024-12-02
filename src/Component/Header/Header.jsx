@@ -15,8 +15,10 @@ const Header = () => {
 
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-primary text-white shadow-md transition duration-300 z-50">
-        <h1 className="text-xl font-bold">KwiQServe</h1>
+      <header className="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-gray-800 text-white shadow-md transition duration-300 z-50">
+        <a href="/">
+          <h1 className="text-xl font-bold">KwiQServe</h1>
+        </a>
 
         {/* Toggle button for mobile */}
         <button
@@ -45,7 +47,7 @@ const Header = () => {
 
         {/* Navigation links */}
         <nav
-          className={`fixed top-0 right-0 h-full w-3/4 bg-primary transform ${
+          className={`fixed top-0 right-0 h-full w-3/4 bg-gray-800 transform ${
             navOpen ? "translate-x-0" : "translate-x-full"
           } md:relative md:translate-x-0 md:flex md:items-center md:justify-end transition-transform duration-300 ease-in-out z-10`}
         >
@@ -53,7 +55,7 @@ const Header = () => {
             <li>
               <a
                 href="/"
-                className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                className="block p-2 lg:p-3 hover:bg-white hover:text-black transition duration-300 rounded"
                 onClick={closeNav}
               >
                 Home
@@ -62,7 +64,7 @@ const Header = () => {
             <li>
               <a
                 href="/service"
-                className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                className="block p-2 lg:p-3 hover:bg-white hover:text-black transition duration-300 rounded"
                 onClick={closeNav}
               >
                 Services
@@ -71,7 +73,7 @@ const Header = () => {
             <li>
               <a
                 href="/contact"
-                className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
+                className="block p-2 lg:p-3 hover:bg-white hover:text-black transition duration-300 rounded"
                 onClick={closeNav}
               >
                 Contact
