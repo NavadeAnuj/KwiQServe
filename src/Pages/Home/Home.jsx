@@ -26,7 +26,7 @@ const Home = () => {
             Your one-stop solution for all your digital marketing needs.
           </p>
           <a
-            href="#services"
+            href="/service"
             className="bg-orange-500 text-white px-6 py-2 rounded transition duration-300 hover:bg-orange-600"
           >
             Explore Services

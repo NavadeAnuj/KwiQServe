@@ -52,7 +52,7 @@ const Header = () => {
           <ul className="flex flex-col p-4 md:p-0 space-y-4 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6">
             <li>
               <a
-                href="#home"
+                href="/"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
@@ -61,16 +61,16 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#about"
+                href="/service"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
-                About
+                Services
               </a>
             </li>
             <li>
               <a
-                href="#contact"
+                href="/contact"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
