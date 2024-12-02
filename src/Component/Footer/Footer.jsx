@@ -54,7 +54,7 @@ const Footer = () => {
                 <i className="fab fa-twitter"></i>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/105563507/admin/dashboard/"
                 className="text-2xl hover:text-orange-500"
                 target="_blank"
                 rel="noopener noreferrer"

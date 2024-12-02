@@ -61,7 +61,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href={<About/>}
+                href="/about"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
@@ -70,7 +70,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href={<Contact/>}
+                href="/contact"
                 className="block p-2 lg:p-3 hover:bg-secondary hover:text-white transition duration-300 rounded"
                 onClick={closeNav}
               >
